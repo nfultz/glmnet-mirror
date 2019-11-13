@@ -3,6 +3,12 @@
 
 # Lasso and Elastic-Net Regularized Generalized Linear Models <img src="man/figures/logo.png" width="100" align="right" />
 
+This is a patched version of glmnet that runs final fits
+in parallel with k folds crossvalidation, and saves a full
+copy of the data set per fold, allowing you to run roughly
+twice as many folds in the same amount of memory and half
+the time.
+
 <!-- [![Travis-CI Build -->
 
 <!-- Status](https://travis-ci.org/trevorhastie/glmnet.svg?branch=master)](https://travis-ci.org/trevorhastie/glmnet) -->
@@ -83,3 +89,4 @@ Statistical Society: Series B (Statistical Methodology)* 74 (2): 245–66.
 </div>
 
 </div>
+
