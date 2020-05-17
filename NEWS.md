@@ -1,3 +1,36 @@
+# glmnet 4.0
+
+Major revision with added functionality. Any GLM family can be used
+now with `glmnet`, not just the built-in families. By passing a
+"family" object as the family argument (rather than a character
+string), one gets access to all families supported by `glm`. This
+development was programmed by our newest member of the `glmnet` team,
+Kenneth Tay.
+
+# glmnet 3.0-3
+
+Bug fixes
+
+* `Intercept=FALSE` with "Gaussian" is fixed. The `dev.ratio` comes out
+  correctly now. The mortran code was changed directly in 4
+  places. look for "standard". Thanks to Kenneth Tay.
+  
+# glmnet 3.0-2
+
+Bug fixes
+
+* `confusion.glmnet` was sometimes not returning a list because of
+  apply collapsing structure
+* `cv.mrelnet` and `cv.multnet` dropping dimensions inappropriately
+* Fix to `storePB` to avoid segfault. Thanks [Tomas  Kalibera](https://github.com/kalibera)!
+* Changed the help for `assess.glmnet` and cousins to be more helpful!
+* Changed some logic in `lambda.interp` to avoid edge cases  (thanks
+  David Keplinger)
+  
+# glmnet 3.0-1
+
+Minor fix to correct Depends in the DESCRIPTION to R (>= 3.6.0)
+
 # glmnet 3.0
 
  This is a major revision with much added functionality, listed
